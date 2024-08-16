@@ -54,9 +54,9 @@ let idn9 = 'on'
             document.getElementById('res').innerText= name1 + ' wins'
             // document.body.style.background = 'radial-gradient(rgb(87, 0, 0),rgb(33, 0, 0),rgb(0, 0, 0))'
             document.body.setAttribute('class','bg')
-            const audio = new Audio();
-            audio.src = "./knife-stab-sound-effect-36354.mp3"
-            audio.play();
+            // const audio = new Audio();
+            // audio.src = "./knife-stab-sound-effect-36354.mp3"
+            // audio.play();
             gameOver = true;
         } 
         else if(c1 =='green' && c2 == 'green' && c3=='green'|| c4=='green' && c5 == 'green' && c6=='green' || c7=='green' && c8 == 'green' && c9=='green'||c1=='green' && c4 == 'green' && c7=='green'||c2=='green' && c5 == 'green' && c8=='green'|| c3=='green' && c6 == 'green' && c9=='green'|| c1=='green' && c5== 'green' && c9=='green'|| c3=='green' && c5== 'green' && c7=='green'){
@@ -65,9 +65,9 @@ let idn9 = 'on'
             // document.body.style.background = 'radial-gradient(rgb(0, 67, 0),rgb(0, 23, 0),rgb(0, 0, 0))'
             gameOver = true;
             
-            const audio = new Audio();
-            audio.src = "./knife-stab-sound-effect-36354.mp3"
-            audio.play();
+            // const audio = new Audio();
+            // audio.src = "./knife-stab-sound-effect-36354.mp3"
+            // audio.play();
         }
         else if (
             idn1 == 'off' && idn2 == 'off' && idn3 == 'off' &&
