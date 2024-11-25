@@ -1,0 +1,48 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> merge;
+        double index,r1,r2;
+        merge.reserve(nums1.size()+nums2.size());
+        for(int i=0; i<(nums1.size()+nums2.size()); i++){
+
+            if(i<nums1.size()){
+              merge.push_back(nums1[i]);
+            } else if(i>=nums1.size()){
+              merge.push_back(nums2[i-nums1.size()]);
+            }
+
+        }
+        sort(merge.begin(),merge.end());
+        if(merge.size()%2==0){
+          index = merge.size()/2;
+           r1=merge[index-1];
+           r2=merge[index];
+           return (r1+r2)/2;
+        }else{
+          index = (merge.size()-1)/2;
+          return merge[index];
+        }
+        
+        return 0.0;
+    }
+};
+int main(){
+    Solution sol;
+    vector<int> nums1 ={1,3};
+    vector<int> nums2 ={2,4};
+    
+    
+    double meidan = sol.findMedianSortedArrays(nums1,nums2);
+    cout<<"the meidan is: "<< meidan;
+    
+    
+    
+    return 0;
+    
+}
