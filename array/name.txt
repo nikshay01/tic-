@@ -4,3 +4,4 @@ removeduplicate.txt
 containsDuplicate.txt
 anagram.txt
 insertion.txt
+2sum.txt
